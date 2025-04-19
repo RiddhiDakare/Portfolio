@@ -1,0 +1,60 @@
+body {
+  background-image: url(earth.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#heading {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  padding-top: 20px;
+}
+.complete {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40rem;
+  opacity: 0;
+  animation: fadeInUp 3s ease forwards;
+  padding-top: 0.1rem;
+  gap:2rem;
+}
+.about {
+  text-decoration: none;
+  height: 5rem;
+  width: 8rem;
+  color: rgb(12, 12, 12);
+  font-size: 1.2rem;
+  border-radius: 50%;
+  background-color: powderblue;
+  display: flex;
+  left: 20rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills {
+  font-size: 2.5rem;
+  font-family: cursive;
+  color: white;
+  line-height: 3;
+  margin-top: 8rem;
+  text-align: left;
+  display: flex;
+  left: 100px;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeInUp 2s ease forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

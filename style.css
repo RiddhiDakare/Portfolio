@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-image: url(earth.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.complete {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40rem;
+  opacity: 0;
+  animation: fadeInUp 3s ease forwards;
+  position: absolute;
+  top: 5%;
+  gap:2rem;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 3s ease forwards;
+  animation-delay: 1s;
+}
+.delay1 {
+  animation-delay: 2s;
+}
+.rotate {
+  width:20rem;
+  height: 20rem;
+  display: flex;
+  margin-left: 69rem;
+  position: absolute;
+  top: 20rem;
+  animation: spin 5s linear infinite;
+}
+
+.header {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 100px;
+  color: #ffe8b6;
+  position: absolute;
+  top: 200px;
+  display: flex;
+  left: 100px;
+}
+.imp {
+  font-size: 40px;
+  padding-top: 17rem;
+  color: white;
+  margin-left: 200px;
+}
+.intro {
+  margin-top: 600px;
+color: white;
+
+  font-size: 40px;
+  display: flex;
+  left: 200px;
+}
+
+.footer {
+  font-size: 1.5rem;
+  color: white;
+  position: absolute;
+  top: 50rem;
+}
+.home {
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  height: 70px;
+  width: 200px;
+  color: white;
+  font-size: 30px;
+  border-radius: 30%;
+  background-color: powderblue;
+  display: flex;
+  left: 600px;
+  justify-content: center;
+  align-items: center;
+}
+.about {
+  text-decoration: none;
+  height: 5rem;
+  width: 8rem;
+  color: rgb(12, 12, 12);
+  font-size: 1.2rem;
+  border-radius: 50%;
+  background-color: powderblue;
+  display: flex;
+  left: 20rem;
+  justify-content: center;
+  align-items: center;
+}
+
+ @keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 

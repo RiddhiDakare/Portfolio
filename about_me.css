@@ -1,0 +1,50 @@
+body {
+  background-image: url(earth.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+}
+
+.me {
+  font-size: 1.6rem;
+  color: white;
+  margin-top: 2rem;
+  text-align: center;
+  font-family: cursive;
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+.complete {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40rem;
+  opacity: 0;
+  animation: fadeInUp 3s ease forwards;
+  padding-top: 0.1rem;
+  gap:2rem;
+}
+.about {
+  text-decoration: none;
+  height: 5rem;
+  width: 8rem;
+  color: rgb(12, 12, 12);
+  font-size: 1.2rem;
+  border-radius: 50%;
+  background-color: powderblue;
+  display: flex;
+  left: 20rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

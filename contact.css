@@ -1,0 +1,92 @@
+body {
+  background-image: url(earth.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+}
+.complete {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40rem;
+  opacity: 0;
+  animation: fadeInUp 3s ease forwards;
+  padding-top: 0.1rem;
+  gap:2rem;
+}
+.about {
+  text-decoration: none;
+  height: 5rem;
+  width: 8rem;
+  color: rgb(12, 12, 12);
+  font-size: 1.2rem;
+  border-radius: 50%;
+  background-color: powderblue;
+  display: flex;
+  left: 20rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  margin-left: 10rem;
+  height: 32rem;
+  width: 22rem;
+  background-color: #619cb5;
+  border: solid black 1px;
+  font-size: 2rem;
+  color: rgb(7, 7, 7);
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  opacity: 0;
+  animation: fadeInUp 2s ease forwards;
+  animation-delay: 1s;
+}
+.box {
+  display: flex;
+  flex-direction: row;
+}
+
+.textbox {
+  background-color: aliceblue;
+  height: 1.5rem;
+  width: 10rem;
+}
+
+#box3 {
+  height: 4rem;
+  width: 10rem;
+}
+#heading {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+}
+
+.con {
+  background-color: #619cb5;
+  height: 31rem;
+  width: 24rem;
+  font-family: cursive;
+  font-size: 1.2rem;
+  margin-left: 250px;
+  margin-top: 2rem;
+  line-height: 2.5;
+  text-align: center;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 1s;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
